@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TimeshiftViewController" customModule="tvtwit" customModuleProvider="target">
+            <connections>
+                <outlet property="currentTimeLabel" destination="EGE-uL-Nxm" id="4gk-Gr-u66"/>
+                <outlet property="tableView" destination="c68-PQ-0vU" id="86p-5t-yGZ"/>
+                <outlet property="totalTimeLabel" destination="rOb-yD-EDO" id="UKp-Ml-3Re"/>
+                <outlet property="view" destination="iN0-l3-epB" id="AfU-Wg-Ej4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c68-PQ-0vU">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="564"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="separatorInset" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                </tableView>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pcz-8l-iFa">
+                    <rect key="frame" x="0.0" y="564" width="600" height="36"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGE-uL-Nxm" userLabel="currentTimeLabel">
+                            <rect key="frame" x="15" y="8" width="72" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="72" id="u73-Gn-73v"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOb-yD-EDO" userLabel="total time">
+                            <rect key="frame" x="109" y="8" width="46" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmV-He-Mh0">
+                            <rect key="frame" x="95" y="8" width="6" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="wmV-He-Mh0" firstAttribute="leading" secondItem="EGE-uL-Nxm" secondAttribute="trailing" constant="8" id="2cf-dv-71Q"/>
+                        <constraint firstItem="EGE-uL-Nxm" firstAttribute="leading" secondItem="pcz-8l-iFa" secondAttribute="leading" constant="15" id="Vm1-7I-tL8"/>
+                        <constraint firstItem="rOb-yD-EDO" firstAttribute="leading" secondItem="wmV-He-Mh0" secondAttribute="trailing" constant="8" id="gOS-D7-AcC"/>
+                        <constraint firstItem="EGE-uL-Nxm" firstAttribute="top" secondItem="pcz-8l-iFa" secondAttribute="top" constant="8" id="hgb-Iy-PwT"/>
+                        <constraint firstAttribute="bottom" secondItem="EGE-uL-Nxm" secondAttribute="bottom" constant="8" id="nNG-Fp-bhQ"/>
+                        <constraint firstItem="rOb-yD-EDO" firstAttribute="baseline" secondItem="EGE-uL-Nxm" secondAttribute="baseline" id="qhk-DA-maz"/>
+                        <constraint firstItem="wmV-He-Mh0" firstAttribute="baseline" secondItem="EGE-uL-Nxm" secondAttribute="baseline" id="tis-eo-kLF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pcz-8l-iFa" secondAttribute="bottom" id="638-5h-TKm"/>
+                <constraint firstItem="c68-PQ-0vU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Bxp-56-1ut"/>
+                <constraint firstItem="pcz-8l-iFa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Feg-VC-sGk"/>
+                <constraint firstItem="c68-PQ-0vU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Gf8-He-AoD"/>
+                <constraint firstAttribute="trailing" secondItem="c68-PQ-0vU" secondAttribute="trailing" id="Is3-z8-PsK"/>
+                <constraint firstItem="pcz-8l-iFa" firstAttribute="top" secondItem="c68-PQ-0vU" secondAttribute="bottom" id="bqJ-17-wYL"/>
+                <constraint firstAttribute="trailing" secondItem="pcz-8l-iFa" secondAttribute="trailing" id="fpR-S2-hcX"/>
+                <constraint firstItem="pcz-8l-iFa" firstAttribute="top" secondItem="c68-PQ-0vU" secondAttribute="bottom" id="xX6-mQ-2CB"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

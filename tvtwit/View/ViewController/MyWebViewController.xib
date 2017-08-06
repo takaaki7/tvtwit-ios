@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyWebViewController" customModule="tvtwit">
+            <connections>
+                <outlet property="view" destination="9u3-Vi-r35" id="odi-cd-a6Q"/>
+                <outlet property="webView" destination="NBD-C9-ryE" id="jPg-e9-9Xp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9u3-Vi-r35">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NBD-C9-ryE">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="NBD-C9-ryE" firstAttribute="centerX" secondItem="9u3-Vi-r35" secondAttribute="centerX" id="FVA-ef-ULL"/>
+                <constraint firstItem="NBD-C9-ryE" firstAttribute="width" secondItem="9u3-Vi-r35" secondAttribute="width" id="HP0-Sz-XF1"/>
+                <constraint firstItem="NBD-C9-ryE" firstAttribute="centerY" secondItem="9u3-Vi-r35" secondAttribute="centerY" id="nzk-u2-eFZ"/>
+                <constraint firstItem="NBD-C9-ryE" firstAttribute="height" secondItem="9u3-Vi-r35" secondAttribute="height" id="yBj-mb-2mn"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
